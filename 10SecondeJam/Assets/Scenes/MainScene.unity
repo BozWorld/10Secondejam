@@ -341,11 +341,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &167341361 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6079284024403481153, guid: 115a86e64266a994e9fa97e114bcb55f, type: 3}
-  m_PrefabInstance: {fileID: 611440852}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &250189259
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +923,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &420618919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 420618920}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &420618920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420618919}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 435828093}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &435828092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 435828093}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &435828093
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435828092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1031.0756, y: 355.4223, z: -379.55264}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 420618920}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &457991444
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,11 +1401,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3953177494837676474, guid: 115a86e64266a994e9fa97e114bcb55f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4195282378776183070, guid: 115a86e64266a994e9fa97e114bcb55f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4350970261260443825, guid: 115a86e64266a994e9fa97e114bcb55f, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1737,7 +1793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8945618908255257527, guid: 115a86e64266a994e9fa97e114bcb55f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6079284024403481166, guid: 115a86e64266a994e9fa97e114bcb55f, type: 3}
@@ -2735,7 +2791,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameZone: zozo
   characterImage: {fileID: 0}
-  _uiManager: {fileID: 167341361}
   _choiceidx: 0000000001000000
   _characterImage: {fileID: 0}
   typingSpeed: 0.1
@@ -3253,7 +3308,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameZone: zozo
   characterImage: {fileID: 0}
-  _uiManager: {fileID: 167341361}
   _choiceidx: 0000000001000000
   _characterImage: {fileID: 0}
   typingSpeed: 0.1
@@ -4475,7 +4529,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameZone: zozo
   characterImage: {fileID: 0}
-  _uiManager: {fileID: 167341361}
   _choiceidx: 0000000001000000
   _characterImage: {fileID: 0}
   typingSpeed: 0.1
