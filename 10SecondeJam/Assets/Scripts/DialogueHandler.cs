@@ -6,18 +6,14 @@ using TMPro;
 
 public class DialogueHandler : MonoBehaviour
 {
-    public TextMeshProUGUI dialogueBox;
-    public TextMeshProUGUI nameZone;
+    public string nameZone;
     public Image characterImage;
     public GameObject _uiManager;
-    public int[] _choiceidx;
-    public string _nameZone;
+    public int[]  _choiceidx;
     public Sprite _characterImage;
-    public Button continueButton;
     private int index;
     private int buttonidx;
     public float typingSpeed;
-    [SerializeField] private List<Button> _choiceButton = null;
     [SerializeField] private List<DialogueLine> _dialogueList = new List<DialogueLine>();
 
 
@@ -34,9 +30,9 @@ public class DialogueHandler : MonoBehaviour
         if (_uiManager.GetComponent<UiManager>().dialogueBox.text == _dialogueList[index].text && _dialogueList[index].type == DialogueLine.DialogueType.Choice)
         {
             _uiManager.GetComponent<UiManager>().continueButton.gameObject.SetActive(false);
-            for (int i = 0; i < _choiceButton.Count; i++) 
+            for (int i = 0; i <  _uiManager.GetComponent<UiManager>()._choiceButton.Count; i++) 
             {
-                _choiceButton[i].gameObject.SetActive(true);
+                _uiManager.GetComponent<UiManager>()._choiceButton[i].gameObject.SetActive(true);
             }
         }
         
@@ -76,11 +72,12 @@ public class DialogueHandler : MonoBehaviour
                 _uiManager.SetActive(false);
                 break;
             case DialogueLine.DialogueType.Choice:
-                for (int i = 0; i < _choiceButton.Count; i++)
-                {
-                _choiceButton[i] = _uiManager.GetComponent<UiManager>().choiceButton[i];   
+                for (int i = 0; i < _uiManager.GetComponent<UiManager>()._choiceButton.Count; i++)
+                {   
                 _choiceidx[i] = _dialogueList[index].ChoiceIdx[i];
-                _choiceButton[i].gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = _dialogueList[_choiceidx[i]].text;
+                Debug.Log(_choiceidx[i]);
+                _uiManager.GetComponent<UiManager>()._choiceButton[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = _dialogueList[_choiceidx[i]].text;
+                Debug.Log(_uiManager.GetComponent<UiManager>()._choiceButton[i]);
                 }
                 break;
             default:
@@ -95,9 +92,9 @@ public class DialogueHandler : MonoBehaviour
             index = _dialogueList[_choiceidx[ChoiceParameter]].nextLineIndex;
             _uiManager.GetComponent<UiManager>().dialogueBox.text = "";
             StartCoroutine(Type());
-            for (int i = 0; i < _choiceButton.Count ; i++)
+            for (int i = 0; i < _uiManager.GetComponent<UiManager>()._choiceButton.Count ; i++)
             {
-                _choiceButton[i].gameObject.SetActive(false);
+                _uiManager.GetComponent<UiManager>()._choiceButton[i].gameObject.SetActive(false);
             }
             _uiManager.GetComponent<UiManager>().continueButton.gameObject.SetActive(false);
         }
@@ -106,27 +103,26 @@ public class DialogueHandler : MonoBehaviour
     public void OnEnable() {
         if (_dialogueList[index].type == DialogueLine.DialogueType.Choice )
         {
-            for (int i = 0; i < _choiceButton.Count; i++)
-            {
-            _choiceButton[i] = _uiManager.GetComponent<UiManager>().choiceButton[i];   
+            for (int i = 0; i < _uiManager.GetComponent<UiManager>()._choiceButton.Count; i++)
+            {   
             _choiceidx[i] = _dialogueList[index].ChoiceIdx[i];
-             _choiceButton[i].gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = _dialogueList[_choiceidx[i]].text;
+             _uiManager.GetComponent<UiManager>()._choiceButton[i].gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = _dialogueList[_choiceidx[i]].text;
             }
         }
-        _uiManager.GetComponent<UiManager>().nameZone.text = nameZone.text;
+        _uiManager.GetComponent<UiManager>().nameZone.text = nameZone;
         _uiManager.GetComponent<UiManager>().characterImage = characterImage;
         _uiManager.SetActive(true);
         StartCoroutine(Type());
     }
     private void OnDisable() {
-        for (int i = 0; i < _choiceButton.Count ; i++)
+        for (int i = 0; i < _uiManager.GetComponent<UiManager>()._choiceButton.Count ; i++)
             {
-                _choiceButton[i].gameObject.SetActive(false);
+                _uiManager.GetComponent<UiManager>()._choiceButton[i].gameObject.SetActive(false);
             }    
         _uiManager.GetComponent<UiManager>().dialogueBox.text = "";
         index = 0;
         StopCoroutine(Type());
-        nameZone.GetComponent<TextMeshProUGUI>().text = "";
+        _uiManager.GetComponent<UiManager>().nameZone.text = "";
         characterImage.sprite = null;
         _uiManager.GetComponent<UiManager>().characterImage = null; 
         _uiManager.SetActive(false);

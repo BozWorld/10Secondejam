@@ -2,9 +2,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-[CreateAssetMenu(menuName = "dialogueLine")]
 [System.Serializable]
-public class DialogueLine:ScriptableObject
+public class DialogueLine
 {
     public DialogueType type = DialogueType.Dialogue;
     [Multiline] public string text = "";
