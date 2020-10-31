@@ -9,7 +9,7 @@ public class MinigameUIManager : MonoBehaviour
     public GameObject EndingUI, LosingUI;
     public TextMeshProUGUI TimerText;
 
-    private bool LowerTime;
+    private bool LowerTime, GameStarted;
     private float Timer;
     private GameObject[] allDestroyables;
 
@@ -30,11 +30,12 @@ public class MinigameUIManager : MonoBehaviour
         Timer = 10f;
         LowerTime = true;
         allDestroyables = GameObject.FindGameObjectsWithTag("Breakable");
+        GameStarted = false;
     }
 
     private void Update()
     {
-        if(LowerTime)
+        if(LowerTime && GameStarted)
         {
             Timer -= Time.deltaTime;
             TimerText.SetText(Mathf.Round(Timer).ToString() + " Seconds");
@@ -55,6 +56,7 @@ public class MinigameUIManager : MonoBehaviour
     {
         EndingUI.SetActive(true);
         LowerTime = false;
+        GameStarted = false;
     }
 
     public void ResetAll()
@@ -62,9 +64,16 @@ public class MinigameUIManager : MonoBehaviour
         Timer = 10f;
         LowerTime = true;
         LosingUI.SetActive(false);
+        GameStarted = true;
         foreach (GameObject gm in allDestroyables)
         {
             gm.SetActive(true);
         }
+    }
+
+    public void StartGame()
+    {
+        transform.GetChild(0).gameObject.SetActive(true);
+        GameStarted = true;
     }
 }

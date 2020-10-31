@@ -35,7 +35,7 @@ public class PlayerMovementMaze : MonoBehaviour
         transform.Translate(HorWalk, VertWalk, 0);
 
         //Bomb
-        if (Input.GetButtonDown("Fire1") && NearbyWalls[0] != gameObject)
+        if (Input.GetButtonDown("Fire1") && NearbyWalls[0] != gameObject && GameManager.Singleton.GetHelp())
             //Checks if there is a wall in the array
         {
             int i = 0;

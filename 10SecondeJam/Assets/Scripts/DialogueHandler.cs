@@ -60,16 +60,20 @@ public class DialogueHandler : MonoBehaviour
         switch (_dialogueList[index].type)
         {
             case DialogueLine.DialogueType.GoodEnd:
-                _uiManager.GetComponent<UiManager>().dialogueBox.text = "";
+
+                    _uiManager.GetComponent<UiManager>().dialogueBox.text = "";
                 _uiManager.GetComponent<UiManager>().continueButton.gameObject.SetActive(false);
                 this.gameObject.SetActive(false);
                 _uiManager.SetActive(false);
+                    Debug.Log("Good");
+                GameManager.Singleton.SetHelp(true);
                 break;
             case DialogueLine.DialogueType.BadEnd:
                 _uiManager.GetComponent<UiManager>().dialogueBox.text = "";
                 _uiManager.GetComponent<UiManager>().continueButton.gameObject.SetActive(false);
                 this.gameObject.SetActive(false);
                 _uiManager.SetActive(false);
+                GameManager.Singleton.SetHelp(false);
                 break;
             case DialogueLine.DialogueType.Choice:
                 for (int i = 0; i < _uiManager.GetComponent<UiManager>()._choiceButton.Count; i++)
@@ -123,7 +127,7 @@ public class DialogueHandler : MonoBehaviour
         index = 0;
         StopCoroutine(Type());
         _uiManager.GetComponent<UiManager>().nameZone.text = "";
-        characterImage.sprite = null;
+        //characterImage.sprite = null;
         _uiManager.GetComponent<UiManager>().characterImage = null; 
         _uiManager.SetActive(false);
         _uiManager.GetComponent<UiManager>().continueButton.gameObject.SetActive(false);
