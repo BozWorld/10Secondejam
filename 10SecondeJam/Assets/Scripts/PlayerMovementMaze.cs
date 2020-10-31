@@ -8,6 +8,7 @@ public class PlayerMovementMaze : MonoBehaviour
     private float HorWalk, VertWalk;
     private GameObject[] NearbyWalls;
     private bool MinigameDone;
+    private Vector3 Position;
 
     private void Start()
     {
@@ -16,11 +17,13 @@ public class PlayerMovementMaze : MonoBehaviour
 
         MinigameDone = false;
         //Makes sure we can play the minigame
+
+        Position = transform.position;
     }
     
     void Update()
     {
-        if (MinigameDone)
+        if (MinigameDone || !MinigameUIManager.Singleton.Lost() && !MinigameDone)
         {
             return;
         }
@@ -39,7 +42,7 @@ public class PlayerMovementMaze : MonoBehaviour
             //Will help us check which point on the list we are on
             foreach (GameObject g in NearbyWalls)
             {
-                Destroy(g);
+                g.SetActive(false);
                 //Destroy the wall
                 if (i == 0)
                 {
@@ -99,5 +102,12 @@ public class PlayerMovementMaze : MonoBehaviour
                 //Removes from the array
             }
         }
+    }
+
+    public void ResetPos()
+    {
+        transform.position = Position;
+        MinigameDone = false;
+        MinigameUIManager.Singleton.ResetAll();
     }
 }
