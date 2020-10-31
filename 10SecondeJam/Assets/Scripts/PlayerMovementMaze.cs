@@ -7,15 +7,25 @@ public class PlayerMovementMaze : MonoBehaviour
     public float WalkSpeed;
     private float HorWalk, VertWalk;
     private GameObject[] NearbyWalls;
+    private bool MinigameDone;
 
     private void Start()
     {
         NearbyWalls = new GameObject[] { gameObject };
         //Sets the first in the list as its own game object, to not have an empty array
+
+        MinigameDone = false;
+        //Makes sure we can play the minigame
     }
     
     void Update()
     {
+        if (MinigameDone)
+        {
+            return;
+        }
+        //Stops us from doing anything other than clicking continue
+
         //Movement
         HorWalk = Input.GetAxis("Horizontal") * WalkSpeed * Time.deltaTime;
         VertWalk = Input.GetAxis("Vertical") * WalkSpeed * Time.deltaTime;
@@ -63,6 +73,13 @@ public class PlayerMovementMaze : MonoBehaviour
                 NearbyWalls[NearbyWalls.Length] = collision.transform.gameObject;
                 //Adds a wall in the array
             }
+        }
+        if(collision.transform.gameObject.layer == 8)
+            //Check if we grab some sand for the time
+        {
+            MinigameUIManager.Singleton.ShowEnding();
+            MinigameDone = true;
+            Destroy(collision.transform.gameObject);
         }
     }
 
