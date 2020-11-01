@@ -7,6 +7,7 @@ using TMPro;
 public class DialogueHandler : MonoBehaviour
 {
     public string nameZone;
+    public int CharOrder;
     public int[]  _choiceidx;
     public Sprite[] _characterSprite;
     private int index;
@@ -78,14 +79,14 @@ public class DialogueHandler : MonoBehaviour
                 this.gameObject.SetActive(false);
                 FindObjectOfType<UiManager>().gameObject.SetActive(false);
                     Debug.Log("Good");
-                GameManager.Singleton.SetHelp(true);
+                GameManager.Singleton.SetHelp(true, CharOrder);
                 break;
             case DialogueLine.DialogueType.BadEnd:
                 FindObjectOfType<UiManager>().dialogueBox.text = "";
                 FindObjectOfType<UiManager>().continueButton.gameObject.SetActive(false);
                 this.gameObject.SetActive(false);
                 FindObjectOfType<UiManager>().gameObject.SetActive(false);
-                GameManager.Singleton.SetHelp(false);
+                GameManager.Singleton.SetHelp(false, CharOrder);
                 break;
             case DialogueLine.DialogueType.Choice:
                 for (int i = 0; i < FindObjectOfType<UiManager>()._choiceButton.Count; i++)

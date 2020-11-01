@@ -6,12 +6,13 @@ using TMPro;
 public class MinigameUIManager : MonoBehaviour
 {
     public static MinigameUIManager Singleton;
-    public GameObject EndingUI, LosingUI;
-    public TextMeshProUGUI TimerText;
+    public GameObject[] EndingUI, LosingUI;
+    public TextMeshProUGUI[] TimerText;
 
     private bool LowerTime, GameStarted;
     private float Timer;
     private GameObject[] allDestroyables;
+    private int CurrentLevel;
 
     private void Awake()
     {
@@ -38,10 +39,12 @@ public class MinigameUIManager : MonoBehaviour
         if(LowerTime && GameStarted)
         {
             Timer -= Time.deltaTime;
-            TimerText.SetText(Mathf.Round(Timer).ToString() + " Seconds");
+            TimerText[CurrentLevel].SetText(Mathf.Round(Timer).ToString() + " Seconds");
+
             if (Timer <= 0)
             {
-                LosingUI.SetActive(true);
+
+                LosingUI[CurrentLevel].SetActive(true);
                 LowerTime = false;
             }
         }
@@ -54,7 +57,7 @@ public class MinigameUIManager : MonoBehaviour
 
     public void ShowEnding()
     {
-        EndingUI.SetActive(true);
+        EndingUI[CurrentLevel].SetActive(true);
         LowerTime = false;
         GameStarted = false;
     }
@@ -63,7 +66,7 @@ public class MinigameUIManager : MonoBehaviour
     {
         Timer = 10f;
         LowerTime = true;
-        LosingUI.SetActive(false);
+        LosingUI[CurrentLevel].SetActive(false);
         GameStarted = true;
         foreach (GameObject gm in allDestroyables)
         {
@@ -71,9 +74,10 @@ public class MinigameUIManager : MonoBehaviour
         }
     }
 
-    public void StartGame()
+    public void StartGame(int LevelToPlay)
     {
-        transform.GetChild(0).gameObject.SetActive(true);
+        CurrentLevel = LevelToPlay;
+        transform.GetChild(LevelToPlay).gameObject.SetActive(true);
         GameStarted = true;
     }
 }

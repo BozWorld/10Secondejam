@@ -20,10 +20,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SetHelp(bool newSet)
+    public void SetHelp(bool newSet, int level)
     {
         HasHelp = newSet;
-        MinigameUIManager.Singleton.StartGame();
+        MinigameUIManager.Singleton.StartGame(level);
     }
 
     public bool GetHelp()
