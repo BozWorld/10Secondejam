@@ -14,6 +14,7 @@ public class DialogueHandler : MonoBehaviour
     private int buttonidx;
     public float typingSpeed;
     [SerializeField] private List<DialogueLine> _dialogueList = new List<DialogueLine>();
+    private bool GoodEnding;
 
 
     private void Start() 
@@ -46,7 +47,8 @@ public class DialogueHandler : MonoBehaviour
         }
     }
     public void ContinueText()
-    {   
+    {
+
         if (_dialogueList[index].activeEffect)
         {
             FindObjectOfType<WordWobble>().enabled = true;
@@ -57,9 +59,18 @@ public class DialogueHandler : MonoBehaviour
         }
         if (_dialogueList[index].isCharacterTalking)
         {
-         FindObjectOfType<UiManager>().dialogueBox.color = FindObjectOfType<UiManager>().characterTalkColor; 
+            FindObjectOfType<UiManager>().dialogueBox.color = FindObjectOfType<UiManager>().characterTalkColor;
+            FindObjectOfType<UiManager>().nameZone.text = "";
         }
-        FindObjectOfType<UiManager>().characterImage.sprite = _characterSprite[_dialogueList[index].characterSpriteIdx];
+        else if (isActiveAndEnabled)
+        {
+            FindObjectOfType<UiManager>().dialogueBox.color = Color.black;
+            FindObjectOfType<UiManager>().nameZone.text = nameZone;
+        }
+        if (isActiveAndEnabled)
+        {
+            FindObjectOfType<UiManager>().characterImage.sprite = _characterSprite[_dialogueList[index].characterSpriteIdx];
+        }
         if (this.gameObject.activeSelf)
         {
             FindObjectOfType<UiManager>().continueButton.gameObject.SetActive(false);
@@ -75,24 +86,22 @@ public class DialogueHandler : MonoBehaviour
 
                     FindObjectOfType<UiManager>().dialogueBox.text = "";
                 FindObjectOfType<UiManager>().continueButton.gameObject.SetActive(false);
-                this.gameObject.SetActive(false);
                 FindObjectOfType<UiManager>().gameObject.SetActive(false);
-                GameManager.Singleton.SetHelp(true, CharOrder);
-                break;
+                    GoodEnding = true;
+                    this.gameObject.SetActive(false);
+                    break;
             case DialogueLine.DialogueType.BadEnd:
                 FindObjectOfType<UiManager>().dialogueBox.text = "";
                 FindObjectOfType<UiManager>().continueButton.gameObject.SetActive(false);
-                this.gameObject.SetActive(false);
                 FindObjectOfType<UiManager>().gameObject.SetActive(false);
-                GameManager.Singleton.SetHelp(false, CharOrder);
-                break;
+                    GoodEnding = false;
+                    this.gameObject.SetActive(false);
+                    break;
             case DialogueLine.DialogueType.Choice:
                 for (int i = 0; i < FindObjectOfType<UiManager>()._choiceButton.Count; i++)
                 {   
                 _choiceidx[i] = _dialogueList[index].ChoiceIdx[i];
-                Debug.Log(_choiceidx[i]);
                 FindObjectOfType<UiManager>()._choiceButton[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = _dialogueList[_choiceidx[i]].text;
-                Debug.Log(FindObjectOfType<UiManager>()._choiceButton[i]);
                 }
                 break;
             default:
@@ -103,11 +112,19 @@ public class DialogueHandler : MonoBehaviour
     }
     public void ChoiceMaker(int ChoiceParameter)
     {
-        if (_dialogueList[index].isCharacterTalking)
+        if (_dialogueList[index].isCharacterTalking && isActiveAndEnabled)
         {
-         FindObjectOfType<UiManager>().dialogueBox.color = FindObjectOfType<UiManager>().characterTalkColor; 
+            FindObjectOfType<UiManager>().dialogueBox.color = FindObjectOfType<UiManager>().characterTalkColor;
+            FindObjectOfType<UiManager>().nameZone.text = "";
         }
-        FindObjectOfType<UiManager>().characterImage.sprite = _characterSprite[_dialogueList[index].characterSpriteIdx];
+        /*else
+        {
+            FindObjectOfType<UiManager>().dialogueBox.color = Color.black;
+        }*/
+        if (isActiveAndEnabled)
+        {
+            FindObjectOfType<UiManager>().characterImage.sprite = _characterSprite[_dialogueList[index].characterSpriteIdx];
+        }
         FindObjectOfType<AudioManager>().Play("clickSound");
         if (this.gameObject.activeSelf){
             index = _dialogueList[_choiceidx[ChoiceParameter]].nextLineIndex;
@@ -130,12 +147,25 @@ public class DialogueHandler : MonoBehaviour
              FindObjectOfType<UiManager>()._choiceButton[i].gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = _dialogueList[_choiceidx[i]].text;
             }
         }
-        FindObjectOfType<UiManager>().nameZone.text = nameZone;
-        FindObjectOfType<UiManager>().characterImage.sprite = _characterSprite[0];
-        FindObjectOfType<UiManager>().gameObject.SetActive(true);
-        StartCoroutine(Type());
+        if (isActiveAndEnabled)
+        {
+            FindObjectOfType<UiManager>().nameZone.text = nameZone;
+            FindObjectOfType<UiManager>().characterImage.sprite = _characterSprite[0];
+            FindObjectOfType<UiManager>().gameObject.SetActive(true);
+            StartCoroutine(Type());
+        }
     }
     private void OnDisable() {
+
+        if (GoodEnding)
+        {
+            GameManager.Singleton.SetHelp(true, CharOrder);
+        }
+        else
+        {
+            GameManager.Singleton.SetHelp(false, CharOrder);
+        }
+
         for (int i = 0; i < FindObjectOfType<UiManager>()._choiceButton.Count ; i++)
             {
                 FindObjectOfType<UiManager>()._choiceButton[i].gameObject.SetActive(false);

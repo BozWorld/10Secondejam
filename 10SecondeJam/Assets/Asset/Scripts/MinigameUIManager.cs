@@ -79,5 +79,7 @@ public class MinigameUIManager : MonoBehaviour
         CurrentLevel = LevelToPlay;
         transform.GetChild(LevelToPlay).gameObject.SetActive(true);
         GameStarted = true;
+        LowerTime = true;
+        Timer = 10f;
     }
 }

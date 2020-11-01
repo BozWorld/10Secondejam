@@ -110,4 +110,9 @@ public class PlayerMovementMaze : MonoBehaviour
         MinigameDone = false;
         MinigameUIManager.Singleton.ResetAll();
     }
+
+    private void OnEnable()
+    {
+        MinigameDone = false;
+    }
 }
