@@ -10,7 +10,7 @@ public class DialogueLine
     public bool activeEffect;
     public bool isCharacterTalking;
     public int nextLineIndex = 0;
-    public int characterSprite;
+    public int characterSpriteIdx;
     
     public List<int> ChoiceIdx = new List<int>();
     public enum DialogueType{   Dialogue = 0, Choice = 1, GoodEnd = 2, BadEnd = 3}
