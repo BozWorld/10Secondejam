@@ -420,7 +420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4350970261260443825
 RectTransform:
   m_ObjectHideFlags: 0
@@ -576,7 +576,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2247132795666702926
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1225,6 +1225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   continueButton: {fileID: 2784934791831724305}
   dialogueBox: {fileID: 6079284024774819563}
+  characterTalkColor: {r: 0, g: 0.00002193451, b: 1, a: 0}
   characterImage: {fileID: 6079284023280029301}
   nameZone: {fileID: 6079284023482082029}
   _choiceButton:
@@ -1382,7 +1383,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2288764831269246459
 RectTransform:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class UiManager : MonoBehaviour
 {
     public Button continueButton;
     public TextMeshProUGUI dialogueBox;
+    public Color characterTalkColor;
     public Image characterImage;
     public TextMeshProUGUI nameZone;
     public List<Button> _choiceButton;

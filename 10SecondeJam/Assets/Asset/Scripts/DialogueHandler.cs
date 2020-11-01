@@ -7,9 +7,8 @@ using TMPro;
 public class DialogueHandler : MonoBehaviour
 {
     public string nameZone;
-    public Image characterImage;
     public int[]  _choiceidx;
-    public Sprite _characterImage;
+    public Sprite[] _characterSprite;
     private int index;
     private int buttonidx;
     public float typingSpeed;
@@ -46,7 +45,12 @@ public class DialogueHandler : MonoBehaviour
         }
     }
     public void ContinueText()
-    {
+    {   
+        if (_dialogueList[index].isCharacterTalking)
+        {
+         FindObjectOfType<UiManager>().dialogueBox.color = FindObjectOfType<UiManager>().characterTalkColor; 
+        }
+        FindObjectOfType<UiManager>().characterImage.sprite = _characterSprite[_dialogueList[index].characterSprite];
         FindObjectOfType<AudioManager>().Play("clickSound");
         if (this.gameObject.activeSelf)
         {
@@ -92,6 +96,7 @@ public class DialogueHandler : MonoBehaviour
     }
     public void ChoiceMaker(int ChoiceParameter)
     {
+        FindObjectOfType<UiManager>().characterImage.sprite = _characterSprite[_dialogueList[index].characterSprite];
         FindObjectOfType<AudioManager>().Play("clickSound");
         if (this.gameObject.activeSelf){
             index = _dialogueList[_choiceidx[ChoiceParameter]].nextLineIndex;
@@ -115,7 +120,7 @@ public class DialogueHandler : MonoBehaviour
             }
         }
         FindObjectOfType<UiManager>().nameZone.text = nameZone;
-        FindObjectOfType<UiManager>().characterImage = characterImage;
+        FindObjectOfType<UiManager>().characterImage.sprite = _characterSprite[0];
         FindObjectOfType<UiManager>().gameObject.SetActive(true);
         StartCoroutine(Type());
     }
