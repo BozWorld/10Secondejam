@@ -46,6 +46,14 @@ public class DialogueHandler : MonoBehaviour
     }
     public void ContinueText()
     {   
+        if (_dialogueList[index].activeEffect)
+        {
+            FindObjectOfType<WordWobble>().enabled = true;
+        }
+        else
+        {
+            FindObjectOfType<WordWobble>().enabled = false;
+        }
         if (_dialogueList[index].isCharacterTalking)
         {
          FindObjectOfType<UiManager>().dialogueBox.color = FindObjectOfType<UiManager>().characterTalkColor; 
