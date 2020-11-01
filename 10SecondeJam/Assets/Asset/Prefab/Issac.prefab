@@ -1,0 +1,293 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4625874474899142362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4625874474899142361}
+  - component: {fileID: 4625874474899142360}
+  m_Layer: 0
+  m_Name: Issac
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4625874474899142361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4625874474899142362}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4625874474899142360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4625874474899142362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0635b95e97ee1ab4dba501005af83a10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameZone: Issac
+  _choiceidx: 0000000001000000
+  _characterSprite:
+  - {fileID: 0}
+  - {fileID: 0}
+  typingSpeed: 0.1
+  _dialogueList:
+  - type: 0
+    text: There has to be a meaning to all of this ! God or who knows what is trying
+      to give us a lesson !
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 1
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "Hey, trust me, there has to be a solution to all this! It just can\u2019t
+      be the end, we all still have lots of things we want to do, we all want to
+      live, if we all work together we\u2019ll be able to do something about it !"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 1
+    text: "Hey, trust me, there has to be a solution to all this! It just can\u2019t
+      be the end, we all still have lots of things we want to do, we all want to
+      live, if we all work together we\u2019ll be able to do something about it !"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 0
+    characterSprite: 0
+    ChoiceIdx: 0300000011000000
+  - type: 0
+    text: No...
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 4
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "No, I don\u2019t think so\u2026 I think it really is the end. "
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 5
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "Come on, don\u2019t say that ! I\u2019m sure it will go well, those 10
+      seconds we have left must mean something, it wouldn\u2019t make sense otherwise
+      !"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 6
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "I mean, we can\u2019t just \u201Call die\u201D like that, can we ?"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 7
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 1
+    text: "There has to be a meaning to all this, maybe like a metaphor or something,
+      like in the movies and stuff, don\u2019t you think so ?"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 080000000e000000
+  - type: 0
+    text: afraid?
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 9
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "It\u2019s ok to be afraid. "
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 10
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "\u2026 I don\u2019t wanna die."
+    activeEffect: 1
+    isCharacterTalking: 0
+    nextLineIndex: 11
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "\u2026I just can\u2019t accept it. I\u2019m afraid\u2026 admitting it
+      is already almost like giving meaning to all of this\u2026 I guess it\u2019s
+      easier to deny it."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 12
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "It\u2019s frustrating, I wish I could have spent more time here, be a
+      better me, grow up\u2026 I don\u2019t know. In the end I guess i\u2019m just
+      used to living."
+    activeEffect: 1
+    isCharacterTalking: 0
+    nextLineIndex: 13
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 2
+    text: "Hey I\u2019m guessing helping you would allow us some more time here,
+      right ? I\u2019ll do it, I\u2019d like a bit more time to accept what\u2019s
+      happening."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 0
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: it's over
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 15
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: No, I think it really is over for all of us.
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 16
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 3
+    text: "Well you\u2019re clearly not in the mood, good luck on your own, I\u2019m
+      gonna meet up with the others, listening to you is too depressing."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: Yeah!
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 18
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "Hum\u2026Yeah, you\u2019re probably right, we must be able to do something
+      ! "
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 19
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "Yeah, that\u2019s the spirit ! If we give it our all, we can manage to
+      fill up the hourglass and give more time to the world !"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 20
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "We must have done something, and god must have punished us, there has
+      to be a reason for everything\u2026 We just need to understand the metaphor,
+      and we\u2019ll all learn something from it !"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 21
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "Come on, let\u2019s think together, why do you think all of this is happening
+      ? Global warming ? World Hunger ? "
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 22
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 1
+    text: "Oh no maybe it\u2019s something more complex than that, we should look
+      it up in the bible or something ! Don\u2019t you think so ?"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 170000001b000000
+  - type: 0
+    text: hm...
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 24
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "\u2026I don\u2019t think it\u2019s that complex\u2026 "
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 25
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "Naaah, you\u2019re out of it ! It has to make sense ! "
+    activeEffect: 1
+    isCharacterTalking: 0
+    nextLineIndex: 26
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 3
+    text: "Plus there\u2019s this whole thing with the sand and all\u2026well anyway,
+      I think I\u2019ll go see the others instead\u2026You\u2019re just too depressing."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: denial
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 28
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "Don\u2019t you feel like you\u2019re in denial ? "
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 29
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "\u2026You\u2019re right. But please, let me be, I don\u2019t want to have
+      to face all this\u2026accept that it\u2019s all gonna end soon."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 30
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 2
+    text: "-\tSorry, it\u2019s a bit selfish to ask you this but please let me believe
+      it even if it\u2019s wrong. Anyway, I\u2019ll help you find sand."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 0
+    characterSprite: 0
+    ChoiceIdx: 

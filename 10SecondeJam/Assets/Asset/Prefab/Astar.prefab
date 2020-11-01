@@ -1,0 +1,353 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4694962767974201329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4694962767974201328}
+  - component: {fileID: 4694962767974201335}
+  m_Layer: 0
+  m_Name: Astar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4694962767974201328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4694962767974201329}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4694962767974201335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4694962767974201329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0635b95e97ee1ab4dba501005af83a10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameZone: Astar
+  CharOrder: 1
+  _choiceidx: 0000000001000000
+  _characterSprite:
+  - {fileID: 0}
+  - {fileID: 0}
+  typingSpeed: 0.1
+  _dialogueList:
+  - type: 0
+    text: "- Hm\u2026Oh you already spoke with the other? Yeah I don\u2019t really
+      care honestly."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 1
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "- I mean, I could die now and it wouldn\u2019t change shit. Not that I\u2019m
+      sad or that I\u2019m trying to wallow in self-pity."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 1
+    text: "- In the end it\u2019s cool haha, It\u2019s funny to think \xAB I lived
+      to see the end of the world \xBB, but well, I doubt I\u2019ll be able to brag
+      about it. Since everyone will be dead, you know."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 3
+    characterSprite: 0
+    ChoiceIdx: 0300000004000000
+  - type: 0
+    text: No regrets?
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 5
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: Afraid to die?
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 6
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "- You really don\u2019t have any regrets ? "
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 7
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- Aren''t you afraid to die?'
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 19
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "- Of course I have regrets, who doesn\u2019t ? Probably corrupt politicians,
+      or crazy dudes who don\u2019t wear masks, now that I think about it."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 8
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- But what do you want to do about it ? Win some more seconds to grieve
+      ? Think back on my childhood when I punched this kid cuz his mouth stank?'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 9
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "- I don\u2019t care about any of this, I might as well get over with it
+      and pass on to my next life where I\u2019ll be reborn as a fish or whatever."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 10
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 1
+    text: '- Or die in hell if it exists. '
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 0b0000000c000000
+  - type: 0
+    text: No more lies
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 13
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: I won't insist
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 14
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- You don''t need to lie anymore'
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 15
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- Well in that case, I won''t insist'
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 18
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "- \u2026You say that as if the end of the world would make humanity sincere.
+      And why would you want me to be honest ?"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 16
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- What would it change? Why are you so interested in my regrets anyway?
+      Even if I was more sincere on what I feel, I wouldn''t feel better.'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 17
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 2
+    text: '- Death is scary, it''s cold and freezing. There''s no way to make it
+      sound better... but I''ll help you, I''d like to make the most of my last moments'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 3
+    text: Thanks and good luck anyway.
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "- I am. But what will it change. Death is scary because it\u2019s sudden.
+      Even at the last moment, it\u2019s hard to visualise, to understand. "
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 20
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- One day you''re here, complaining that that guy next to you in the train
+      is sleeping on your shoulder, and the next second there''s an accident and
+      you''re listening to a concert by Mozart feat Aviici'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 21
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- But in the end, dying, the end of the world, or eating breakfast, it''s
+      all the same thing, it all ends up having no importance like a reaction video'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 22
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 1
+    text: '- I guess I''m just waiting for it to end, at least instead of the existential
+      void there will be... void.'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 1700000018000000
+  - type: 0
+    text: You grieved?
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 25
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: Too depressing
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 26
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- It sounds like you already grieved'
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 27
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- You''re really too depressing'
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 32
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- ...No. In the end I guess I like this world. You know, old cynical woman
+      with a big heart, it''s also a character development.'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 28
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- I''m afraid to die, I lived a good life, met a lot of good people, laughed
+      a lot... also suffered a lot.'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 29
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- I won''t say "Every good things has an end" because I wouldn''t like
+      it to be true, if I could prevent all of this from happening I would'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 30
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- But I can''t I''m powerless, so I make jokes trying to forget that soon,
+      i''ll probably be having a masterclass from Julius Caesar and Elon Musk'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 31
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 2
+    text: '- But... I''ll try to help you with the hourglass... I''d like this few
+      more seconds to profit... one last time of this beautiful world.'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 3
+    text: '- I guess you''re right, now leave me alone please'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "j'aime le jeu vid\xE9o"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "j'aime le jeu vid\xE9o"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "j'aime le jeu vid\xE9o"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "j'aime le jeu vid\xE9o"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "j'aime le jeu vid\xE9o"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "j'aime le jeu vid\xE9o"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "j'aime le jeu vid\xE9o"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 

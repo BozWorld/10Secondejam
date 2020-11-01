@@ -1,0 +1,355 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3129235413936858325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3129235413936858324}
+  - component: {fileID: 3129235413936858323}
+  m_Layer: 0
+  m_Name: Ethel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3129235413936858324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3129235413936858325}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3129235413936858323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3129235413936858325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0635b95e97ee1ab4dba501005af83a10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameZone: Ethel
+  CharOrder: 2
+  _choiceidx: 0000000001000000
+  _characterSprite:
+  - {fileID: 0}
+  - {fileID: 0}
+  typingSpeed: 0.1
+  _dialogueList:
+  - type: 0
+    text: '- I see that you managed to get back some time, congratulations. Managing
+      to keep your calm in such a situation is worthy of praise.'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 1
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- This situation doesn''t have as much sense as you''re thinking, we''re
+      literally living the last 10 seconds of the world'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 1
+    text: I think you already noticed it, but there's not many of us here, your ability
+      is to fill up the hourglass will be in any case limited
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 0
+    characterSprite: 0
+    ChoiceIdx: 0300000004000000
+  - type: 0
+    text: What's happening?
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 5
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: Nothing matters
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 6
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- You know what''s really happening?!!'
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 7
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- So nothing we do matters anymore right?'
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 20
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- Yes and no. Yes, I know surely more than you : our world is over. The
+      world as we know it is nearing its end.'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 8
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- God, or whatever name you want to give to that entity, stopped the world
+      10 seconds before the end. They chose a few people and gave them some respite.'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 9
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "- Each time we find some sand, we\u2019re allowed more time. But it\u2019s
+      illusory, it\u2019s not years, months, weeks."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 10
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 1
+    text: '- But mere minutes, to accept our fate, or allow us to rest, I guess'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 0b0000000c000000
+  - type: 0
+    text: More detached
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 13
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: I know enough
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 14
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- You sound more detached than the others'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 15
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- I know enough, I think I''ll leave you now'
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 19
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "- I guess it\u2019s the price of knowledge, hahahaha. Sorry if I sound
+      detached, I guess that\u2019s just what comes with my status."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 16
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "- When time stopped, I was chosen to guide you. I don\u2019t know why,
+      but I believe it might be because of my calm demeanor."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 17
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "- In any case, I got here knowing a bit more than the others. But if it
+      reassures you, I\u2019m as affected by the current events as you are, and it
+      scares me too. "
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 18
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 2
+    text: '- Well no matters, time is not on our side, I would have liked to tell
+      you more but we must hurry. Allow me to help you in this last trial.'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 3
+    text: "- Hum\u2026Thank you. In a way you might be right, knowing too much is
+      not a pleasant thing. I wish you luck nevertheless. "
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "- It does if you\u2019re willing to make the most of it."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 21
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "- Trust me, I\u2019m not saying this to be philosophical or anything.
+      What you choose to do may only matters to you, but that\u2019s ok"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 22
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "- Maybe that thanks to you, Astar will go peacefully instead of wallowing
+      in self-pity, Isaac will learn to appreciate what he\u2019s lived so far rather
+      than think of the future he won\u2019t have, and even I\u2026"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 23
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 1
+    text: "- And whatever your motivations are\u2026I hope your determination managed
+      to help you through this. As for me, by telling you this I am already fulfilling
+      my role."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 1800000019000000
+  - type: 0
+    text: Help me
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 26
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: I'll leave you
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 27
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- Guide me one last time, please'
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 28
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- I know enough, I think I''ll leave you for now'
+    activeEffect: 0
+    isCharacterTalking: 1
+    nextLineIndex: 33
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- Haha no need to take such a solemn tone with me.'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 29
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: '- Before all, I wanted to thank you. For all those you helped. Maybe you
+      were just motivated by the end of this story.'
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 30
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "- Or maybe the end of the world scares you and you wanted to stall for
+      time. In the end, I\u2019m also scared."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 31
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "- But know that all the time you won back helped at least me think of
+      my life. I\u2019m afraid, I have regrets, but I\u2019ll be able to accept it.
+      Thanks."
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 32
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 2
+    text: Now, let me help you one last time.
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 3
+    text: "- Hum... Thank you. In a way you might be right, knowing too much is not
+      a pleasant thing. I wish you luck nevertheless. \xBB"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "j'aime le jeu vid\xE9o"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "j'aime le jeu vid\xE9o"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "j'aime le jeu vid\xE9o"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "j'aime le jeu vid\xE9o"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "j'aime le jeu vid\xE9o"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 
+  - type: 0
+    text: "j'aime le jeu vid\xE9o"
+    activeEffect: 0
+    isCharacterTalking: 0
+    nextLineIndex: 2
+    characterSprite: 0
+    ChoiceIdx: 

@@ -1,358 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1357058359824701208
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1357058359824701209}
-  - component: {fileID: 1357058359824701214}
-  m_Layer: 0
-  m_Name: Ethel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1357058359824701209
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357058359824701208}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4525821311915826309}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1357058359824701214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357058359824701208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0635b95e97ee1ab4dba501005af83a10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameZone: Ethel
-  CharOrder: 2
-  _choiceidx: 0000000001000000
-  _characterSprite:
-  - {fileID: 0}
-  - {fileID: 0}
-  typingSpeed: 0.1
-  _dialogueList:
-  - type: 0
-    text: '- I see that you managed to get back some time, congratulations. Managing
-      to keep your calm in such a situation is worthy of praise.'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 1
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- This situation doesn''t have as much sense as you''re thinking, we''re
-      literally living the last 10 seconds of the world'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 1
-    text: I think you already noticed it, but there's not many of us here, your ability
-      is to fill up the hourglass will be in any case limited
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 0
-    characterSprite: 0
-    ChoiceIdx: 0300000004000000
-  - type: 0
-    text: What's happening?
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 5
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: Nothing matters
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 6
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- You know what''s really happening?!!'
-    activeEffect: 0
-    isCharacterTalking: 1
-    nextLineIndex: 7
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- So nothing we do matters anymore right?'
-    activeEffect: 0
-    isCharacterTalking: 1
-    nextLineIndex: 20
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- Yes and no. Yes, I know surely more than you : our world is over. The
-      world as we know it is nearing its end.'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 8
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- God, or whatever name you want to give to that entity, stopped the world
-      10 seconds before the end. They chose a few people and gave them some respite.'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 9
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "- Each time we find some sand, we\u2019re allowed more time. But it\u2019s
-      illusory, it\u2019s not years, months, weeks."
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 10
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 1
-    text: '- But mere minutes, to accept our fate, or allow us to rest, I guess'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 0b0000000c000000
-  - type: 0
-    text: More detached
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 13
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: I know enough
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 14
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- You sound more detached than the others'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 15
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- I know enough, I think I''ll leave you now'
-    activeEffect: 0
-    isCharacterTalking: 1
-    nextLineIndex: 19
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "- I guess it\u2019s the price of knowledge, hahahaha. Sorry if I sound
-      detached, I guess that\u2019s just what comes with my status."
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 16
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "- When time stopped, I was chosen to guide you. I don\u2019t know why,
-      but I believe it might be because of my calm demeanor."
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 17
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "- In any case, I got here knowing a bit more than the others. But if it
-      reassures you, I\u2019m as affected by the current events as you are, and it
-      scares me too. "
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 18
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 2
-    text: '- Well no matters, time is not on our side, I would have liked to tell
-      you more but we must hurry. Allow me to help you in this last trial.'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 3
-    text: "- Hum\u2026Thank you. In a way you might be right, knowing too much is
-      not a pleasant thing. I wish you luck nevertheless. "
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "- It does if you\u2019re willing to make the most of it."
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 21
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "- Trust me, I\u2019m not saying this to be philosophical or anything.
-      What you choose to do may only matters to you, but that\u2019s ok"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 22
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "- Maybe that thanks to you, Astar will go peacefully instead of wallowing
-      in self-pity, Isaac will learn to appreciate what he\u2019s lived so far rather
-      than think of the future he won\u2019t have, and even I\u2026"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 23
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 1
-    text: "- And whatever your motivations are\u2026I hope your determination managed
-      to help you through this. As for me, by telling you this I am already fulfilling
-      my role."
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 1800000019000000
-  - type: 0
-    text: Help me
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 26
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: I'll leave you
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 27
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- Guide me one last time, please'
-    activeEffect: 0
-    isCharacterTalking: 1
-    nextLineIndex: 28
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- I know enough, I think I''ll leave you for now'
-    activeEffect: 0
-    isCharacterTalking: 1
-    nextLineIndex: 33
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- Haha no need to take such a solemn tone with me.'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 29
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- Before all, I wanted to thank you. For all those you helped. Maybe you
-      were just motivated by the end of this story.'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 30
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "- Or maybe the end of the world scares you and you wanted to stall for
-      time. In the end, I\u2019m also scared."
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 31
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "- But know that all the time you won back helped at least me think of
-      my life. I\u2019m afraid, I have regrets, but I\u2019ll be able to accept it.
-      Thanks."
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 32
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 2
-    text: Now, let me help you one last time.
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 3
-    text: "- Hum... Thank you. In a way you might be right, knowing too much is not
-      a pleasant thing. I wish you luck nevertheless. \xBB"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
 --- !u!1 &4525821311915826310
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,551 +27,195 @@ Transform:
   m_LocalPosition: {x: 1425.1034, y: 554.17065, z: -80.28717}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4525821312443460781}
+  - {fileID: 6691798156566701103}
   - {fileID: 4525821312836882640}
   - {fileID: 1357058359824701209}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4525821312443460782
-GameObject:
+--- !u!1001 &2084149186448413430
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4525821312443460781}
-  - component: {fileID: 4525821312443460780}
-  m_Layer: 0
-  m_Name: Issac
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &4525821312443460781
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4525821311915826309}
+    m_Modifications:
+    - target: {fileID: 4625874474899142361, guid: c9f21629b496a7f42a07ea7a1231b8d7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625874474899142361, guid: c9f21629b496a7f42a07ea7a1231b8d7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625874474899142361, guid: c9f21629b496a7f42a07ea7a1231b8d7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625874474899142361, guid: c9f21629b496a7f42a07ea7a1231b8d7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625874474899142361, guid: c9f21629b496a7f42a07ea7a1231b8d7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625874474899142361, guid: c9f21629b496a7f42a07ea7a1231b8d7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625874474899142361, guid: c9f21629b496a7f42a07ea7a1231b8d7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625874474899142361, guid: c9f21629b496a7f42a07ea7a1231b8d7, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625874474899142361, guid: c9f21629b496a7f42a07ea7a1231b8d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625874474899142361, guid: c9f21629b496a7f42a07ea7a1231b8d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625874474899142361, guid: c9f21629b496a7f42a07ea7a1231b8d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625874474899142362, guid: c9f21629b496a7f42a07ea7a1231b8d7, type: 3}
+      propertyPath: m_Name
+      value: Issac
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c9f21629b496a7f42a07ea7a1231b8d7, type: 3}
+--- !u!4 &6691798156566701103 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4625874474899142361, guid: c9f21629b496a7f42a07ea7a1231b8d7, type: 3}
+  m_PrefabInstance: {fileID: 2084149186448413430}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4525821312443460782}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4525821311915826309}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4525821312443460780
-MonoBehaviour:
+--- !u!1001 &4159208829928879053
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4525821312443460782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0635b95e97ee1ab4dba501005af83a10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameZone: Issac
-  CharOrder: 0
-  _choiceidx: 0000000001000000
-  _characterSprite:
-  - {fileID: 0}
-  - {fileID: 0}
-  typingSpeed: 0.1
-  _dialogueList:
-  - type: 0
-    text: je m'appelle moeva
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 1
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
---- !u!1 &4525821312836882641
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4525821312836882640}
-  - component: {fileID: 4525821312836882647}
-  m_Layer: 0
-  m_Name: Astar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &4525821312836882640
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4525821311915826309}
+    m_Modifications:
+    - target: {fileID: 3129235413936858324, guid: 586d9aa63b203bb428004901c8dd9eda, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129235413936858324, guid: 586d9aa63b203bb428004901c8dd9eda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129235413936858324, guid: 586d9aa63b203bb428004901c8dd9eda, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129235413936858324, guid: 586d9aa63b203bb428004901c8dd9eda, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129235413936858324, guid: 586d9aa63b203bb428004901c8dd9eda, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129235413936858324, guid: 586d9aa63b203bb428004901c8dd9eda, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129235413936858324, guid: 586d9aa63b203bb428004901c8dd9eda, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129235413936858324, guid: 586d9aa63b203bb428004901c8dd9eda, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129235413936858324, guid: 586d9aa63b203bb428004901c8dd9eda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129235413936858324, guid: 586d9aa63b203bb428004901c8dd9eda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129235413936858324, guid: 586d9aa63b203bb428004901c8dd9eda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129235413936858325, guid: 586d9aa63b203bb428004901c8dd9eda, type: 3}
+      propertyPath: m_Name
+      value: Ethel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 586d9aa63b203bb428004901c8dd9eda, type: 3}
+--- !u!4 &1357058359824701209 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3129235413936858324, guid: 586d9aa63b203bb428004901c8dd9eda, type: 3}
+  m_PrefabInstance: {fileID: 4159208829928879053}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4525821312836882641}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4525821311915826309}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4525821312836882647
-MonoBehaviour:
+--- !u!1001 &9216943477550589728
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4525821311915826309}
+    m_Modifications:
+    - target: {fileID: 4694962767974201328, guid: 1034d85e67df4e849a24e77009b7ae9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694962767974201328, guid: 1034d85e67df4e849a24e77009b7ae9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694962767974201328, guid: 1034d85e67df4e849a24e77009b7ae9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694962767974201328, guid: 1034d85e67df4e849a24e77009b7ae9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694962767974201328, guid: 1034d85e67df4e849a24e77009b7ae9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694962767974201328, guid: 1034d85e67df4e849a24e77009b7ae9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694962767974201328, guid: 1034d85e67df4e849a24e77009b7ae9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694962767974201328, guid: 1034d85e67df4e849a24e77009b7ae9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694962767974201328, guid: 1034d85e67df4e849a24e77009b7ae9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694962767974201328, guid: 1034d85e67df4e849a24e77009b7ae9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694962767974201328, guid: 1034d85e67df4e849a24e77009b7ae9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694962767974201329, guid: 1034d85e67df4e849a24e77009b7ae9a, type: 3}
+      propertyPath: m_Name
+      value: Astar
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1034d85e67df4e849a24e77009b7ae9a, type: 3}
+--- !u!4 &4525821312836882640 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4694962767974201328, guid: 1034d85e67df4e849a24e77009b7ae9a, type: 3}
+  m_PrefabInstance: {fileID: 9216943477550589728}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4525821312836882641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0635b95e97ee1ab4dba501005af83a10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameZone: Astar
-  CharOrder: 1
-  _choiceidx: 0000000001000000
-  _characterSprite:
-  - {fileID: 0}
-  - {fileID: 0}
-  typingSpeed: 0.1
-  _dialogueList:
-  - type: 0
-    text: "- Hm\u2026Oh you already spoke with the other? Yeah I don\u2019t really
-      care honestly."
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 1
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "- I mean, I could die now and it wouldn\u2019t change shit. Not that I\u2019m
-      sad or that I\u2019m trying to wallow in self-pity."
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 1
-    text: "- In the end it\u2019s cool haha, It\u2019s funny to think \xAB I lived
-      to see the end of the world \xBB, but well, I doubt I\u2019ll be able to brag
-      about it. Since everyone will be dead, you know."
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 3
-    characterSprite: 0
-    ChoiceIdx: 0300000004000000
-  - type: 0
-    text: No regrets?
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 5
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: Afraid to die?
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 6
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "- You really don\u2019t have any regrets ? "
-    activeEffect: 0
-    isCharacterTalking: 1
-    nextLineIndex: 7
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- Aren''t you afraid to die?'
-    activeEffect: 0
-    isCharacterTalking: 1
-    nextLineIndex: 19
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "- Of course I have regrets, who doesn\u2019t ? Probably corrupt politicians,
-      or crazy dudes who don\u2019t wear masks, now that I think about it."
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 8
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- But what do you want to do about it ? Win some more seconds to grieve
-      ? Think back on my childhood when I punched this kid cuz his mouth stank?'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 9
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "- I don\u2019t care about any of this, I might as well get over with it
-      and pass on to my next life where I\u2019ll be reborn as a fish or whatever."
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 10
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 1
-    text: '- Or die in hell if it exists. '
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 0b0000000c000000
-  - type: 0
-    text: No more lies
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 13
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: I won't insist
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 14
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- You don''t need to lie anymore'
-    activeEffect: 0
-    isCharacterTalking: 1
-    nextLineIndex: 15
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- Well in that case, I won''t insist'
-    activeEffect: 0
-    isCharacterTalking: 1
-    nextLineIndex: 18
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "- \u2026You say that as if the end of the world would make humanity sincere.
-      And why would you want me to be honest ?"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 16
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- What would it change? Why are you so interested in my regrets anyway?
-      Even if I was more sincere on what I feel, I wouldn''t feel better.'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 17
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 2
-    text: '- Death is scary, it''s cold and freezing. There''s no way to make it
-      sound better... but I''ll help you, I''d like to make the most of my last moments'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 3
-    text: Thanks and good luck anyway.
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "- I am. But what will it change. Death is scary because it\u2019s sudden.
-      Even at the last moment, it\u2019s hard to visualise, to understand. "
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 20
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- One day you''re here, complaining that that guy next to you in the train
-      is sleeping on your shoulder, and the next second there''s an accident and
-      you''re listening to a concert by Mozart feat Aviici'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 21
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- But in the end, dying, the end of the world, or eating breakfast, it''s
-      all the same thing, it all ends up having no importance like a reaction video'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 22
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 1
-    text: '- I guess I''m just waiting for it to end, at least instead of the existential
-      void there will be... void.'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 1700000018000000
-  - type: 0
-    text: You grieved?
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 25
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: Too depressing
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 26
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- It sounds like you already grieved'
-    activeEffect: 0
-    isCharacterTalking: 1
-    nextLineIndex: 27
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- You''re really too depressing'
-    activeEffect: 0
-    isCharacterTalking: 1
-    nextLineIndex: 32
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- ...No. In the end I guess I like this world. You know, old cynical woman
-      with a big heart, it''s also a character development.'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 28
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- I''m afraid to die, I lived a good life, met a lot of good people, laughed
-      a lot... also suffered a lot.'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 29
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- I won''t say "Every good things has an end" because I wouldn''t like
-      it to be true, if I could prevent all of this from happening I would'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 30
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: '- But I can''t I''m powerless, so I make jokes trying to forget that soon,
-      i''ll probably be having a masterclass from Julius Caesar and Elon Musk'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 31
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 2
-    text: '- But... I''ll try to help you with the hourglass... I''d like this few
-      more seconds to profit... one last time of this beautiful world.'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 3
-    text: '- I guess you''re right, now leave me alone please'
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
-  - type: 0
-    text: "j'aime le jeu vid\xE9o"
-    activeEffect: 0
-    isCharacterTalking: 0
-    nextLineIndex: 2
-    characterSprite: 0
-    ChoiceIdx: 
