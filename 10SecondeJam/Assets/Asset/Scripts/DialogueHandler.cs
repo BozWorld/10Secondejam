@@ -59,8 +59,7 @@ public class DialogueHandler : MonoBehaviour
         {
          FindObjectOfType<UiManager>().dialogueBox.color = FindObjectOfType<UiManager>().characterTalkColor; 
         }
-        FindObjectOfType<UiManager>().characterImage.sprite = _characterSprite[_dialogueList[index].characterSprite];
-        FindObjectOfType<AudioManager>().Play("clickSound");
+        FindObjectOfType<UiManager>().characterImage.sprite = _characterSprite[_dialogueList[index].characterSpriteIdx];
         if (this.gameObject.activeSelf)
         {
             FindObjectOfType<UiManager>().continueButton.gameObject.SetActive(false);
@@ -78,7 +77,6 @@ public class DialogueHandler : MonoBehaviour
                 FindObjectOfType<UiManager>().continueButton.gameObject.SetActive(false);
                 this.gameObject.SetActive(false);
                 FindObjectOfType<UiManager>().gameObject.SetActive(false);
-                    Debug.Log("Good");
                 GameManager.Singleton.SetHelp(true, CharOrder);
                 break;
             case DialogueLine.DialogueType.BadEnd:
@@ -105,7 +103,11 @@ public class DialogueHandler : MonoBehaviour
     }
     public void ChoiceMaker(int ChoiceParameter)
     {
-        FindObjectOfType<UiManager>().characterImage.sprite = _characterSprite[_dialogueList[index].characterSprite];
+        if (_dialogueList[index].isCharacterTalking)
+        {
+         FindObjectOfType<UiManager>().dialogueBox.color = FindObjectOfType<UiManager>().characterTalkColor; 
+        }
+        FindObjectOfType<UiManager>().characterImage.sprite = _characterSprite[_dialogueList[index].characterSpriteIdx];
         FindObjectOfType<AudioManager>().Play("clickSound");
         if (this.gameObject.activeSelf){
             index = _dialogueList[_choiceidx[ChoiceParameter]].nextLineIndex;
